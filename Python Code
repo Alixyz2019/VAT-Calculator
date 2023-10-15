@@ -1,0 +1,21 @@
+def calculate_vat(amount, vat_rate):
+    """Calculate VAT based on provided amount and VAT rate."""
+    return amount * vat_rate / 100
+
+
+def main():
+    # Input the amount and VAT rate
+    amount = float(input("Enter the amount: "))
+    vat_rate = float(input("Enter the VAT rate (in %): "))
+
+    # Calculate VAT
+    vat = calculate_vat(amount, vat_rate)
+
+    # Print results
+    print(f"\nAmount without VAT: {amount:.2f}")
+    print(f"VAT ({vat_rate}%): {vat:.2f}")
+    print(f"Amount with VAT: {amount + vat:.2f}")
+
+
+if __name__ == "__main__":
+    main()
